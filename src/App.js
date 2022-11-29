@@ -102,7 +102,8 @@ class Aggregator extends React.Component {
 }
 
   return (
-    <div className="App">
+  <div>
+	<div class="sidenav">
 	<label>
         <input
           type="checkbox"
@@ -111,6 +112,8 @@ class Aggregator extends React.Component {
         />
         Has computers?
       </label>
+	  <br>
+	  </br>
 	  	<label>
         <input
           type="checkbox"
@@ -119,11 +122,15 @@ class Aggregator extends React.Component {
         />
         Has AV?
       </label>
+	  
 	  <br>
 	  </br>
 	  <SortUpButton onclick={SortUpButton}/>
 	  <SortDownButton onclick={SortDownButton}/>
 	  <ResetList onclick={ResetList}/>
+	  </div>
+	  <div className="App">
+
       <h1>Reservable CIT Rooms</h1> {/* TODO: personalize your bakery (if you want) */}
       <div class="flex"> {sort.map((room, index) =>  
 
@@ -151,6 +158,7 @@ class Aggregator extends React.Component {
 					   <button>Reserve!</button>
 
     </div>
+	</div>
   );
 }
 
