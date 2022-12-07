@@ -131,7 +131,8 @@ class Aggregator extends React.Component {
 	  </div>
 	  <div className="App">
 
-      <h1>Reservable CIT Rooms</h1> {/* TODO: personalize your bakery (if you want) */}
+      <img src="cit.jpg" padding="100" width="25%" height="25%"></img>
+	  <h1>Reservable CIT Rooms</h1> {/* TODO: personalize your bakery (if you want) */}
       <div class="flex"> {sort.map((room, index) =>  
 
 		(!computers && !av) || (!computers && av && room.av) || (computers && !av && room.computers) || (computers && av && room.computers && room.av) ? 
